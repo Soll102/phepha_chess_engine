@@ -238,7 +238,7 @@ class SelfPlayConfig:
     temperature:          float = 1.0
     temperature_drop_ply: int   = 24
 
-    max_moves: int = 512   # was 800; shorter games = less garbage positions
+    max_moves: int = 512   
 
     dirichlet_alpha:    float = 0.30
     dirichlet_fraction: float = 0.25
@@ -255,7 +255,7 @@ class SelfPlayConfig:
     lr:                float = 3e-4
     weight_decay:      float = 1e-4
     grad_clip:         float = 1.0
-    train_every_games: int   = 8    # run one training pass every N completed games
+    train_every_games: int   = 8    
 
     log_every: int = 10
 

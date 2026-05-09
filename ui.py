@@ -32,7 +32,7 @@ class AlphaZeroGUI:
     def __init__(self):
         self.root = tk.Tk()
         self.root.configure(bg="#e9e9e9")
-        self.root.title("Phela AlphaZero Trainer")
+        self.root.title("Phepha Chess Trainer")
         self.root.geometry("1500x940")
         self.root.minsize(1100, 760)
 
@@ -57,7 +57,7 @@ class AlphaZeroGUI:
         left = ttk.Frame(self.root, padding=15)
         left.grid(row=0, column=0, sticky="ns")
 
-        ttk.Label(left, text="Phela AlphaZero", font=("Segoe UI", 18, "bold")).pack(pady=(0, 14))
+        ttk.Label(left, text="Phepha Chess", font=("Segoe UI", 18, "bold")).pack(pady=(0, 14))
 
         ttk.Label(left, text="Model", font=("Segoe UI", 10, "bold")).pack(anchor="w")
         self.model_var = tk.StringVar(value=self.default_model_path())
